@@ -7,7 +7,7 @@
         <meta name="Keywords" content="" />
         <meta name="author" content="" />
 
-        <title>SAAXIL TEACHERS</title>
+        <title>قائمة المعلمين الساحل</title>
 
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -42,7 +42,7 @@
 
                         <div id="navbar-collapsed-menu" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
-                              <li class="active">
+                               <li class="active">
                                     <a href="index.html"> الرئيسية</a>
                                 </li>
                                 <li>
@@ -77,11 +77,11 @@
                         <div class="overlay">
                             <h3 class="title1 text-center custom-title hidden-sm hidden-md hidden-lg hidden-xl hidden-xxl">
                                 <br />
-                                SAAXIL TEACHERS
+                                معلمين الساحل
                             </h3>
 
                             <h2 class="title1 text-center custom-title hidden-xs">
-                                SAAXIL TEACHERS
+                                معلمين الساحل
                             </h2>
                         </div>
                     </div>
@@ -91,12 +91,8 @@
             <div class="text-center">
                 <br />
                 <br />
-                <h3>
-                    REGISTERED TEACHERS
-                </h3>
-                <h3>
-                   SAAXIL REGION
-                </h3>
+                <h3>المعلمين </h3>
+                <h3> الإقليم الساحل</h3>
             </div>
 
             <div style="overflow-x: auto;">
@@ -105,12 +101,12 @@
                 <table id="example" class="table table-striped table-bordered" style="width: 100%; border: 4px solid white;">
                     <thead>
                         <tr>
-                            <th style="width: 3%;">TEACHER NAME</th>
-                            <th style="width: 3%;">TEACHER TYPE</th>
-                            <th style="width: 3%;">TEACHER SCHOOL</th>
-                            <th style="width: 3%;">TEACHER REGION</th>
-                            <th style="width: 3%;">TEACHER CITY</th>
-                            <th style="width: 3%;">TEACHER LEVEL</th>
+                            <th style="width: 3%;">اسم المعلم</th>
+                            <th style="width: 3%;">نوع المعلم</th>
+                            <th style="width: 3%;">مدرسة المعلم</th>
+                            <th style="width: 3%;">إقليم المعلم</th>
+                            <th style="width: 3%;">مدينة المعلم</th>
+                            <th style="width: 3%;">مديرية المعلم</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -584,7 +580,7 @@
                     </div>
                     <br />
                     <div id="footer-nav-links" class="col-xs-12 text-center">
-                           <a href="somali.html">اللغة الصومالية</a>
+                          <a href="somali.html">اللغة الصومالية</a>
                         <a href="activatedsystems.html">العملاء</a>
                         <a href="english/page-login.html" target="_blank" class="hidden-xs hidden-sm">المدارس</a>
                         <a href="english/page-login.html" target="_blank" class="hidden-xs hidden-sm">المعاهد</a>
@@ -609,7 +605,30 @@
         <script src="enjs/jquery.dataTables.min.js"></script>
         <script src="enjs/dataTables.bootstrap4.min.js"></script>
         <script>
-            new DataTable("#example");
-        </script>
+            $(document).ready(function() {
+                   $('#example').DataTable( {
+                       "language": {
+                       "decimal":        " البيانات الخالية",
+                       "emptyTable":     "لم يعثر على أية سجلات",
+                       "info":           "إظهار _START_ إلى _END_ من أصل _TOTAL_ سجلا",
+                       "infoEmpty":      " 0 to 0 of 0 السجلات",
+                       "infoFiltered":   "(منتقاة من مجموع _MAX_ سجلا )",
+                       "infoPostFix":    "",
+                       "thousands":      ",",
+                       "lengthMenu":     "العرض _MENU_ السجلات",
+                       "loadingRecords": "جاري التحميل",
+                       "processing":     "",
+                       "search":         "إبحث:",
+                       "zeroRecords":    "لا توجد المعلومات",
+                       "paginate": {
+                           "first":      "الأول",
+                           "last":       "الأخير",
+                           "next":       "التالي",
+                           "previous":   "السابق"
+                       },
+                       }
+                   } );
+                   } );  
+          </script>
     </body>
 </html>
