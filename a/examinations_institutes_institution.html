@@ -801,8 +801,32 @@
         <script src="enjs/jquery.dataTables.min.js"></script>
         <script src="enjs/dataTables.bootstrap4.min.js"></script>
         <script>
-            regions();
-            new DataTable("#example");
+           $(document).ready(function() {
+       $('#arabic').DataTable( {
+           "language": {
+           "decimal":        " البيانات الخالية",
+           "emptyTable":     "لم يعثر على أية سجلات",
+           "info":           "إظهار _START_ إلى _END_ من أصل _TOTAL_ سجلا",
+           "infoEmpty":      " 0 to 0 of 0 السجلات",
+           "infoFiltered":   "(منتقاة من مجموع _MAX_ سجلا )",
+           "infoPostFix":    "",
+           "thousands":      ",",
+           "lengthMenu":     "العرض _MENU_ السجلات",
+           "loadingRecords": "جاري التحميل",
+           "processing":     "",
+           "search":         "إبحث:",
+           "zeroRecords":    "لا توجد المعلومات",
+           "paginate": {
+               "first":      "الأول",
+               "last":       "الأخير",
+               "next":       "التالي",
+               "previous":   "السابق"
+           },
+           }
+       } );
+       } );  
+
+
         </script>
     </body>
 </html>
