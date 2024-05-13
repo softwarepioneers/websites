@@ -6,7 +6,7 @@
         <meta name="Keywords" content="" />
         <meta name="author" content="" />
 
-        <title>PRIMARY SCHOOLS</title>
+        <title>الأنظمة الإبتدائية</title>
 
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -76,11 +76,11 @@
                         <div class="overlay">
                             <h3 class="title1 text-center custom-title hidden-sm hidden-md hidden-lg hidden-xl hidden-xxl">
                                 <br />
-                                PRIMARY SCHOOLS
+                                الأنظمة الإبتدائية
                             </h3>
 
                             <h2 class="title1 text-center custom-title hidden-xs">
-                                PRIMARY SCHOOLS
+                                الأنظمة الإبتدائية
                             </h2>
                         </div>
                     </div>
@@ -91,10 +91,10 @@
                 <br />
                 <br />
                 <h3>
-                    REGISTERED
+                    قائمة
                 </h3>
                 <h3>
-                    PRIMARY SCHOOLS
+                    الأنظمة الإبتدائية
                 </h3>
             </div>
 
@@ -104,12 +104,12 @@
                 <table id="example" class="table table-striped table-bordered" style="width: 100%; border: 4px solid white;">
                     <thead>
                         <tr>
-                            <th style="width: 3%;">SCHOOL NAME</th>
-                            <th style="width: 3%;">SCHOOL TYPE</th>
-                            <th style="width: 3%;">SCHOOL REGION</th>
-                            <th style="width: 3%;">SCHOOL CITY</th>
-                            <th style="width: 3%;">STARTING CONTRACT</th>
-                            <th style="width: 3%;">ENDING CONTRACT</th>
+                            <th style="width: 3%;">إسم المدرسة</th>
+                            <th style="width: 3%;">نوع المدرسة</th>
+                            <th style="width: 3%;">إقليم المدرسة</th>
+                            <th style="width: 3%;">مدينة المدرسة</th>
+                            <th style="width: 3%;">بداية الصفقة</th>
+                            <th style="width: 3%;">نهاية الصفقة</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -608,7 +608,30 @@
         <script src="enjs/jquery.dataTables.min.js"></script>
         <script src="enjs/dataTables.bootstrap4.min.js"></script>
         <script>
-            new DataTable("#example");
-        </script>
+            $(document).ready(function() {
+                   $('#example').DataTable( {
+                       "language": {
+                       "decimal":        " البيانات الخالية",
+                       "emptyTable":     "لم يعثر على أية سجلات",
+                       "info":           "إظهار _START_ إلى _END_ من أصل _TOTAL_ سجلا",
+                       "infoEmpty":      " 0 to 0 of 0 السجلات",
+                       "infoFiltered":   "(منتقاة من مجموع _MAX_ سجلا )",
+                       "infoPostFix":    "",
+                       "thousands":      ",",
+                       "lengthMenu":     "العرض _MENU_ السجلات",
+                       "loadingRecords": "جاري التحميل",
+                       "processing":     "",
+                       "search":         "إبحث:",
+                       "zeroRecords":    "لا توجد المعلومات",
+                       "paginate": {
+                           "first":      "الأول",
+                           "last":       "الأخير",
+                           "next":       "التالي",
+                           "previous":   "السابق"
+                       },
+                       }
+                   } );
+                   } );  
+          </script>
     </body>
 </html>
