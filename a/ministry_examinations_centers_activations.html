@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
     <head>
@@ -7,7 +6,7 @@
         <meta name="Keywords" content="" />
         <meta name="author" content="" />
 
-        <title>ACTIVATED EXAMINATIONS</title>
+        <title>المدارس النشطة</title>
 
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -19,6 +18,7 @@
     <body>
         <div class="container-fluid">
             <div class="row">
+                
                 <nav class="navbar navbar-default navbar-fixed-top custom-navbar" role="navigation">
                     <div class="container-fluid">
                         <div class="navbar-header">
@@ -35,12 +35,13 @@
                                     </a>
                                 </h3>
 
+                               
                             </div>
                         </div>
 
                         <div id="navbar-collapsed-menu" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                 <li class="active">
+                                  <li class="active">
                                     <a href="index.html"> الرئيسية</a>
                                 </li>
                                 <li>
@@ -75,11 +76,11 @@
                         <div class="overlay">
                             <h3 class="title1 text-center custom-title hidden-sm hidden-md hidden-lg hidden-xl hidden-xxl">
                                 <br />
-                                ACTIVATED EXAMINATIONS
+                                المدارس النشطة
                             </h3>
 
                             <h2 class="title1 text-center custom-title hidden-xs">
-                                ACTIVATED EXAMINATIONS
+                                المدارس النشطة
                             </h2>
                         </div>
                     </div>
@@ -90,10 +91,10 @@
                 <br />
                 <br />
                 <h3>
-                    ACTIVATED
+                    المدارس الأكاديمية
                 </h3>
                 <h3>
-                    EXAMINATIONS CENTERS
+                    النشطة
                 </h3>
             </div>
 
@@ -103,12 +104,12 @@
                 <table id="example" class="table table-striped table-bordered" style="width: 100%; border: 4px solid white;">
                     <thead>
                         <tr>
-                           <th style="width: 3%;">CENTER NAME</th>
-                            <th style="width: 3%;">CENTER TYPE</th>
-                            <th style="width: 3%;">CENTER REGION</th>
-                            <th style="width: 3%;">CENTER CITY</th>
-                           <th style="width: 3%;">STARTING CONTRACT</th>
-                            <th style="width: 3%;">ENDING CONTRACT</th>
+                            <th style="width: 3%;">إسم المدرسة</th>
+                            <th style="width: 3%;">نوع المدرسة</th>
+                            <th style="width: 3%;">إقليم المدرسة</th>
+                            <th style="width: 3%;">مدينة المدرسة</th>
+                            <th style="width: 3%;">بداية الصفقة</th>
+                            <th style="width: 3%;">نهاية الصفقة</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -582,7 +583,7 @@
                     </div>
                     <br />
                     <div id="footer-nav-links" class="col-xs-12 text-center">
-                        <a href="somali.html">اللغة الصومالية</a>
+                          <a href="somali.html">اللغة الصومالية</a>
                         <a href="activatedsystems.html">العملاء</a>
                         <a href="english/page-login.html" target="_blank" class="hidden-xs hidden-sm">المدارس</a>
                         <a href="english/page-login.html" target="_blank" class="hidden-xs hidden-sm">المعاهد</a>
@@ -607,32 +608,30 @@
         <script src="enjs/jquery.dataTables.min.js"></script>
         <script src="enjs/dataTables.bootstrap4.min.js"></script>
         <script>
-           $(document).ready(function() {
-       $('#arabic').DataTable( {
-           "language": {
-           "decimal":        " البيانات الخالية",
-           "emptyTable":     "لم يعثر على أية سجلات",
-           "info":           "إظهار _START_ إلى _END_ من أصل _TOTAL_ سجلا",
-           "infoEmpty":      " 0 to 0 of 0 السجلات",
-           "infoFiltered":   "(منتقاة من مجموع _MAX_ سجلا )",
-           "infoPostFix":    "",
-           "thousands":      ",",
-           "lengthMenu":     "العرض _MENU_ السجلات",
-           "loadingRecords": "جاري التحميل",
-           "processing":     "",
-           "search":         "إبحث:",
-           "zeroRecords":    "لا توجد المعلومات",
-           "paginate": {
-               "first":      "الأول",
-               "last":       "الأخير",
-               "next":       "التالي",
-               "previous":   "السابق"
-           },
-           }
-       } );
-       } );  
-
-
-        </script>
+            $(document).ready(function() {
+                   $('#example').DataTable( {
+                       "language": {
+                       "decimal":        " البيانات الخالية",
+                       "emptyTable":     "لم يعثر على أية سجلات",
+                       "info":           "إظهار _START_ إلى _END_ من أصل _TOTAL_ سجلا",
+                       "infoEmpty":      " 0 to 0 of 0 السجلات",
+                       "infoFiltered":   "(منتقاة من مجموع _MAX_ سجلا )",
+                       "infoPostFix":    "",
+                       "thousands":      ",",
+                       "lengthMenu":     "العرض _MENU_ السجلات",
+                       "loadingRecords": "جاري التحميل",
+                       "processing":     "",
+                       "search":         "إبحث:",
+                       "zeroRecords":    "لا توجد المعلومات",
+                       "paginate": {
+                           "first":      "الأول",
+                           "last":       "الأخير",
+                           "next":       "التالي",
+                           "previous":   "السابق"
+                       },
+                       }
+                   } );
+                   } );  
+          </script>
     </body>
 </html>
