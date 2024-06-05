@@ -96,140 +96,179 @@
                     <div class="col-xs-12 col-md-12">
                         <form action="" method="post" id="contact-us" class="form">
                             <div class="form-group col-sm-4">
-                               
-                                <input type="text" name="InstituteName" id="InstituteName" autocomplete="off" placeholder="Institute Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-
-                            
-                          <div class="form-group col-sm-4">
-                             <select name="InstituteType" id="InstituteType" required class="form-control custom-form-control input-lg ">
-                                <option value="" selected="" disabled="" >Institute Type </option>
-                                <option value="PRIVATE INSTITUTE">PRIVATE INSTITUTE</option>
-                                <option value="PUBLIC INSTITUTE">PUBLIC INSTITUTE</option>
-                            </select>
-                        </div>
-
-                            <div class="form-group col-sm-4">
-                                
-                                <input type="text" name="InstituteManager" id="InstituteManager" autocomplete="off" placeholder="Institute Manager" required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="InstituteMobile"
-                                    id="InstituteMobile"
-                                    autocomplete="off"
-                                    placeholder="Institute Mobile"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
+                                <input 
+                                 type="text" 
+                                 name="InstituteName" 
+                                 id="InstituteName" 
+                                 autocomplete="off" 
+                                 placeholder="إسم المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="InstitutePhone"
-                                    id="InstitutePhone"
-                                    autocomplete="off"
-                                    placeholder="Institute Phone"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="InstituteWhatsApp"
-                                    id="InstituteWhatsApp"
-                                    autocomplete="off"
-                                    placeholder="Institute WhatsApp"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="email" name="InstituteEmail" id="InstituteEmail" autocomplete="off" placeholder="Institute Email " required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-
-
-
-
-                             <div class="form-group col-sm-4">
-                                <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute Region</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="InstituteType" 
+                                 id="InstituteType" 
+                                 autocomplete="off" 
+                                 placeholder=" نوع المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute City</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="InstituteManager" 
+                                 id="InstituteManager" 
+                                 autocomplete="off" 
+                                 placeholder=" مدير المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="District" id="District" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute District</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="InstitutePhone" 
+                                 id="InstitutePhone" 
+                                 autocomplete="off" 
+                                 placeholder=" هاتف المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
-
-                            
-                            <div class="form-group col-sm-4">
-                                <select name="InstituteSpecialty" id="InstituteSpecialty" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute Specialty</option>
-                                    <option value="GENERAL INSTITUTE">GENERAL INSTITUTE</option>
-                                    <option value="TECHNICAL INSTITUTE">TECHNICAL INSTITUTE</option>
-                                </select>
-                            </div>
-
-
-
-                            
-
-                    <div class="form-group col-sm-4">
-                    <input type="text" name="UserName" id="UserName" autocomplete="off" placeholder="User Name" required class="form-control custom-form-control input-lg uc-text" >
-                    </div>
-                    <div class="form-group col-sm-4">
-                    <input type="text" name="UserPassword" id="UserPassword" autocomplete="off" placeholder="User Password" required class="form-control custom-form-control input-lg uc-text" >
-                    </div>
-
 
                             <div class="form-group col-sm-4">
-                                <select name="SystemType" id="SystemType" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>System Type</option>
-                                     <option value="OFFLINE SYSTEM">OFFLINE SYSTEM</option>
-                                     <option value="ONLINE SYSTEM">ONLINE SYSTEM</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="InstituteMobile" 
+                                 id="InstituteMobile" 
+                                 autocomplete="off" 
+                                 placeholder=" جوال المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
-                             <div class="form-group col-sm-4">
-                                <select name="SystemDuration" id="SystemDuration" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>System Duration</option>
-                                     <option value="MONTHLY SYSTEM">MONTHLY SYSTEM</option>
-                                     <option value="YEARLY SYSTEM">YEARLY SYSTEM</option>
-                                </select>
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstituteWhatsapp" 
+                                 id="InstituteWhatsapp" 
+                                 autocomplete="off" 
+                                 placeholder=" وأتساب المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstituteEmail" 
+                                 id="InstituteEmail" 
+                                 autocomplete="off" 
+                                 placeholder="بريد المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
 
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstituteRegion" 
+                                 id="InstituteRegion" 
+                                 autocomplete="off" 
+                                 placeholder=" إقليم المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
 
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstituteCity" 
+                                 id="InstituteCity" 
+                                 autocomplete="off" 
+                                 placeholder="مدينة المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
 
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstituteDistrict" 
+                                 id="InstituteDistrict" 
+                                 autocomplete="off" 
+                                 placeholder="مديرية المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstituteSpecialty" 
+                                 id="InstituteSpecialty" 
+                                 autocomplete="off" 
+                                 placeholder="تخصص المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstituteUser" 
+                                 id="InstituteUser" 
+                                 autocomplete="off" 
+                                 placeholder=" إسم المستخدم"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstitutePassword" 
+                                 id="InstitutePassword" 
+                                 autocomplete="off" 
+                                 placeholder="كلمة المرور"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="InstituteSystem" 
+                                 id="InstituteSystem" 
+                                 autocomplete="off" 
+                                 placeholder="نظام المعهد"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="TypeSystem" 
+                                 id="TypeSystem" 
+                                 autocomplete="off" 
+                                 placeholder="نوع النظام"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
 
                             
                           
-
-                           
-                           
-
-                           
-
-                            
                             <div class="form-group col-md-12 text-center">
-                                <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
+                                <input 
+                                type="submit" 
+                                name="Register"
+                                value="التسجيل" 
+                                onclick="ValidateEmail(email)" 
+                                class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
                         </form>
                     </div>
@@ -261,8 +300,8 @@
                             <th style="width: 3%;">INSTITUTE TYPE</th>
                             <th style="width: 3%;">INSTITUTE REGION</th>
                             <th style="width: 3%;">INSTITUTE CITY</th>
+                            <th style="width: 3%;">INSTITUTE SYSTEM</th>
                             <th style="width: 3%;">SYSTEM TYPE</th>
-                            <th style="width: 3%;">SYSTEM DURATION</th>
                         </tr>
                     </thead>
                     <tbody>
