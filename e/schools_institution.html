@@ -95,166 +95,181 @@
                         <h3>ACADEMIC SCHOOL</h3>
                     </div>
                     <div class="col-xs-12 col-md-12">
-                        <form action="schools_institution.php" method="post" id="contact-us" class="form">
+                        <form action="" method="post" id="contact-us" class="form">
                             <div class="form-group col-sm-4">
-                               
-                                <input type="text" name="SchoolName" id="SchoolName" autocomplete="off" placeholder="School Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-
-                            
-                          <div class="form-group col-sm-4">
-                             <select name="SchoolType" id="SchoolType" required class="form-control custom-form-control input-lg ">
-                                <option value="" selected="" disabled="" >School Type </option>
-                                <option value="PRIVATE SCHOOL">PRIVATE SCHOOL</option>
-                                <option value="PUBLIC SCHOOL">PUBLIC SCHOOL</option>
-                            </select>
-                        </div>
-
-                            <div class="form-group col-sm-4">
-                                
-                                <input type="text" name="SchoolManager" id="SchoolManager" autocomplete="off" placeholder="School Manager" required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="SchoolMobile"
-                                    id="SchoolMobile"
-                                    autocomplete="off"
-                                    placeholder="School Mobile"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
+                                <input 
+                                 type="text" 
+                                 name="SchoolName" 
+                                 id="SchoolName" 
+                                 autocomplete="off" 
+                                 placeholder="إسم المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="SchoolPhone"
-                                    id="SchoolPhone"
-                                    autocomplete="off"
-                                    placeholder="School Phone"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="SchoolWhatsApp"
-                                    id="SchoolWhatsApp"
-                                    autocomplete="off"
-                                    placeholder="School WhatsApp"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="email" name="SchoolEmail" id="SchoolEmail" autocomplete="off" placeholder="School Email " required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-
-
-
-
-                             <div class="form-group col-sm-4">
-                                <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School Region</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="SchoolType" 
+                                 id="SchoolType" 
+                                 autocomplete="off" 
+                                 placeholder=" نوع المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School City</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="SchoolManager" 
+                                 id="SchoolManager" 
+                                 autocomplete="off" 
+                                 placeholder=" مدير المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="District" id="District" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School District</option>
-                                </select>
-                            </div>
-
-                            
-                            <div class="form-group col-sm-4">
-                                <select name="SchoolSpecialty" id="SchoolSpecialty" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School Specialty</option>
-                                    <option value="KGS">KGS</option>
-                                    <option value="PRIS">PRIS</option>
-                                    <option value="PRES">PRES</option>
-                                    <option value="SECS">SECS</option>
-                                    <option value="KGPRIS">KGPRIS</option>
-                                    <option value="PRIPRES">PRIPRES</option>
-                                    <option value="PRESECS">PRESECS</option>
-                                    <option value="KGPRIPRES">KGPRIPRES</option>
-                                    <option value="PRIPRESECS">PRIPRESECS</option>
-                                    <option value="KGPRIPRESECS">KGPRIPRESECS</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="SchoolPhone" 
+                                 id="SchoolPhone" 
+                                 autocomplete="off" 
+                                 placeholder=" هاتف المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="SchoolSyllabus" id="SchoolSyllabus" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School Syllabus</option>
-                                     <option value="SOMALILAND SYLLABUS">SOMALILAND SYLLABUS</option>
-                                     <option value="OTHER SYLLABUS">OTHER SYLLABUS</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="SchoolMobile" 
+                                 id="SchoolMobile" 
+                                 autocomplete="off" 
+                                 placeholder=" جوال المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
-
-
-
-
-
-                             <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="RegistrationDate"
-                                    id="RegistrationDate"
-                                    autocomplete="off"
-                                    placeholder="Registration Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="SchoolWhatsapp" 
+                                 id="SchoolWhatsapp" 
+                                 autocomplete="off" 
+                                 placeholder=" وأتساب المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="SchoolEmail" 
+                                 id="SchoolEmail" 
+                                 autocomplete="off" 
+                                 placeholder="بريد المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="SchoolRegion" 
+                                 id="SchoolRegion" 
+                                 autocomplete="off" 
+                                 placeholder=" إقليم المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="SchoolCity" 
+                                 id="SchoolCity" 
+                                 autocomplete="off" 
+                                 placeholder="مدينة المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="SchoolDistrict" 
+                                 id="SchoolDistrict" 
+                                 autocomplete="off" 
+                                 placeholder="مديرية المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="SchoolSpecialty" 
+                                 id="SchoolSpecialty" 
+                                 autocomplete="off" 
+                                 placeholder="تخصص المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="SchoolSyllabus" 
+                                 id="SchoolSyllabus" 
+                                 autocomplete="off" 
+                                 placeholder=" منهج المدرسة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="RegistrationDate" 
+                                 id="RegistrationDate" 
+                                 autocomplete="off" 
+                                 placeholder="تاريخ التسجيل"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StartContract" 
+                                 id="StartContract" 
+                                 autocomplete="off" 
+                                 placeholder="بداية الصفقة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EndContract" 
+                                 id="EndContract" 
+                                 autocomplete="off" 
+                                 placeholder="نهاية الصفقة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
 
                             
                           
-
-                         <div class="form-group col-sm-4">
-                             <select name="SchoolItems" id="SchoolItems" required class="form-control custom-form-control input-lg ">
-                                <option value="" selected="" disabled="" >School Items </option>
-                                <option value="PRODUCT SCHOOL">PRODUCT SCHOOL</option>
-                                <option value="SERVICE SCHOOL">SERVICE SCHOOL</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group col-sm-4">
-                          <select name="SchoolSystem" id="SchoolSystem" required class="form-control custom-form-control input-lg ">
-                            <option value="" selected disabled>School System</option>
-                            <optgroup label="PRODUCT">
-                                <option value="ONLINE PRODUCT"> ONLINE PRODUCT</option>
-                                <option value="OFFLINE PRODUCT">OFFLINE PRODUCT</option>
-                            </optgroup>
-                            <optgroup label="SERVICE">
-                                <option value="ONLINE SERVICE">ONLINE SERVICE</option>
-                                <option value="OFFLINE SERVICE">OFFLINE SERVICE</option>
-                            </optgroup>
-                         </select>
-                     </div>
-                                                   
-
-                           
-
-                            
                             <div class="form-group col-md-12 text-center">
-                                <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
+                                <input 
+                                type="submit" 
+                                name="Register"
+                                value="التسجيل" 
+                                onclick="ValidateEmail(email)" 
+                                class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
                         </form>
                     </div>
@@ -286,8 +301,8 @@
                             <th style="width: 3%;">SCHOOL TYPE</th>
                             <th style="width: 3%;">SCHOOL REGION</th>
                             <th style="width: 3%;">SCHOOL CITY</th>
-                            <th style="width: 3%;">SCHOOL ITEM</th>
-                            <th style="width: 3%;">SCHOOL SYSTEM</th>
+                            <th style="width: 3%;">START CONTRACT</th>
+                            <th style="width: 3%;">END CONTRACT</th>
                         </tr>
                     </thead>
                     <tbody>
