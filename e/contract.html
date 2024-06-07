@@ -97,166 +97,181 @@
                         <h3>ACADEMIC ENTERPRISES</h3>
                     </div>
                     <div class="col-xs-12 col-md-12">
-                                             <form action="" method="post" id="contact-us" class="form">
-                            <div class="form-group col-sm-4">
-                                <input type="text" name="EnterpriseName" id="EnterpriseName" autocomplete="off" placeholder="Enterprise Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-                          <div class="form-group col-sm-4">
-                             <select name="EnterpriseType" id="EnterpriseType" required class="form-control custom-form-control input-lg ">
-                                <option value="" selected="" disabled="" >Enterprise Type </option>
-                                <option value="PRIVATE ENTERPRISE">PRIVATE ENTERPRISE </option>
-                                <option value="PUBLIC ENTERPRISE">PUBLIC ENTERPRISE </option>
-                            </select>
-                        </div>
-
-                            <div class="form-group col-sm-4">
-                                
-                                <input type="text" name="EnterpriseManager" id="EnterpriseManager" autocomplete="off" placeholder="Enterprise Manager" required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EnterpriseMobile"
-                                    id="EnterpriseMobile"
-                                    autocomplete="off"
-                                    placeholder="Enterprise Mobile"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
+                        <form action="" method="post" id="contact-us" class="form">
+                              <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseName" 
+                                 id="EnterpriseName" 
+                                 autocomplete="off" 
+                                 placeholder="إسم المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EnterprisePhone"
-                                    id="EnterprisePhone"
-                                    autocomplete="off"
-                                    placeholder="Enterprise Phone"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EnterpriseWhatsApp"
-                                    id="EnterpriseWhatsApp"
-                                    autocomplete="off"
-                                    placeholder="Enterprise WhatsApp"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="email" name="EnterpriseEmail" id="EnterpriseEmail" autocomplete="off" placeholder="Enterprise Email " required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-
-
-
-
-                             <div class="form-group col-sm-4">
-                                <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Enterprise Region</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseType" 
+                                 id="EnterpriseType" 
+                                 autocomplete="off" 
+                                 placeholder=" نوع المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Enterprise City</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseManager" 
+                                 id="EnterpriseManager" 
+                                 autocomplete="off" 
+                                 placeholder=" مدير المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="District" id="District" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Enterprise District</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="EnterprisePhone" 
+                                 id="EnterprisePhone" 
+                                 autocomplete="off" 
+                                 placeholder=" هاتف المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseMobile" 
+                                 id="EnterpriseMobile" 
+                                 autocomplete="off" 
+                                 placeholder=" جوال المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseWhatsapp" 
+                                 id="EnterpriseWhatsapp" 
+                                 autocomplete="off" 
+                                 placeholder=" وأتساب المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseEmail" 
+                                 id="EnterpriseEmail" 
+                                 autocomplete="off" 
+                                 placeholder="بريد المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseRegion" 
+                                 id="EnterpriseRegion" 
+                                 autocomplete="off" 
+                                 placeholder=" إقليم المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseCity" 
+                                 id="EnterpriseCity" 
+                                 autocomplete="off" 
+                                 placeholder="مدينة المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseDistrict" 
+                                 id="EnterpriseDistrict" 
+                                 autocomplete="off" 
+                                 placeholder="مديرية المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseSpecialty" 
+                                 id="EnterpriseSpecialty" 
+                                 autocomplete="off" 
+                                 placeholder="تخصص المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseNeeds" 
+                                 id="EnterpriseNeeds" 
+                                 autocomplete="off" 
+                                 placeholder=" إحتياجات المنشآة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="RegistrationDate" 
+                                 id="RegistrationDate" 
+                                 autocomplete="off" 
+                                 placeholder="تاريخ التسجيل"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="EnterpriseSystem" 
+                                 id="EnterpriseSystem" 
+                                 autocomplete="off" 
+                                 placeholder="نظام المنشأة"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="TypeSystem" 
+                                 id="TypeSystem" 
+                                 autocomplete="off" 
+                                 placeholder="نوع النظام"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             
-                            <div class="form-group col-sm-4">
-                                <select name="EducationalEnterpriseSpecialty" id="EducationalEnterpriseSpecialty" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Enterprise Specialty</option>
-                                    <option value="KGS">KGS</option>
-                                    <option value="PRIS">PRIS</option>
-                                    <option value="PRES">PRES</option>
-                                    <option value="SECS">SECS</option>
-                                    <option value="KGPRIS">KGPRIS</option>
-                                    <option value="PRIPRES">PRIPRES</option>
-                                    <option value="PRESECS">PRESECS</option>
-                                    <option value="KGPRIPRES">KGPRIPRES</option>
-                                    <option value="PRIPRESECS">PRIPRESECS</option>
-                                    <option value="KGPRIPRESECS">KGPRIPRESECS</option>
-                                    <option value="INSTITUTE">INSTITUTE</option>
-                                    <option value="UNIVERSITY">UNIVERSITY</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-sm-4">
-                                <select name="EnterpriseNeeds" id="EnterpriseNeeds" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Enterprise Needs</option>
-                                     <option value="SCHOOL SYSTEM">SCHOOL SYSTEM</option>
-                                    <option value="INSTITUTE SYSTEM">INSTITUTE SYSTEM</option>
-                                    <option value="UNIVERSITY SYSTEM">UNIVERSITY SYSTEM</option>
-                                    <option value="EXAMINATION SYSTEM">EXAMINATION SYSTEM</option>
-                                </select>
-                            </div>
-
-
-
-
-
-
-                             <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="RegistrationDate"
-                                    id="RegistrationDate"
-                                    autocomplete="off"
-                                    placeholder="Registration Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                            </div>
-
-
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="StartingContract"
-                                    id="StartingContract"
-                                    autocomplete="off"
-                                    placeholder="Starting Contract"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                            </div>
-
-                             <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EndingContract"
-                                    id="EndingContract"
-                                    autocomplete="off"
-                                    placeholder="Ending Contract"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                            </div>
-                            
+                          
                             <div class="form-group col-md-12 text-center">
-                                <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
+                                <input 
+                                type="submit" 
+                                name="Register"
+                                value="التسجيل" 
+                                onclick="ValidateEmail(email)" 
+                                class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
                         </form>
                     </div>
