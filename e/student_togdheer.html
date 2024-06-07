@@ -97,75 +97,177 @@
                     </div>
                     <div class="col-xs-12 col-md-12">
                          <form action="" method="post" id="contact-us" class="form">
-                            <div class="form-group col-sm-4">
-                                <input type="text" name="StudentName" id="StudentName" autocomplete="off" placeholder="Student Name " required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <select name="StudentType" id="StudentType" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Student Type </option>
-                                    <option value="PRIVATE STUDENT "> PRIVATE STUDENT </option>
-                                    <option value="PUBLIC STUDENT ">PUBLIC STUDENT </option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-sm-4">
-                                <input type="text" name="SchoolName" id="SchoolName" autocomplete="off" placeholder="School Name" required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="StudentMobile"
-                                    id="StudentMobile"
-                                    autocomplete="off"
-                                    placeholder="Student Mobile"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
+                             <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentName" 
+                                 id="StudentName" 
+                                 autocomplete="off" 
+                                 placeholder="إسم الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <input type="email" name="StudentEmail" id="StudentEmail" autocomplete="off" placeholder="Student Email " required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-
-                            
-
-                            
-
-                            
-
-                            <div class="form-group col-sm-4">
-                                <select name="Region" id="togdheer" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Student Region</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="StudentType" 
+                                 id="StudentType" 
+                                 autocomplete="off" 
+                                 placeholder=" نوع الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Student City</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="StudentSchool" 
+                                 id="StudentSchool" 
+                                 autocomplete="off" 
+                                 placeholder=" مدرسة الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="Districts" id="District" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Student District</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="StudentPhone" 
+                                 id="StudentPhone" 
+                                 autocomplete="off" 
+                                 placeholder=" هاتف الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="StudentLevel" id="StudentLevel" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Student Level </option>
-                                    <option value="">SCHOOL LEVEL</option>
-                                    <option value="">INSTITUTE LEVEL</option>
-                                    <option value="">UNIVERSITY LEVEL</option>
-                                </select>
+                                <input 
+                                 type="text" 
+                                 name="StudentMobile" 
+                                 id="StudentMobile" 
+                                 autocomplete="off" 
+                                 placeholder=" جوال الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
                             </div>
 
-                          
-                            
-                            <div class="form-group col-md-12 text-center">
-                                <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentWhatsapp" 
+                                 id="StudentWhatsapp" 
+                                 autocomplete="off" 
+                                 placeholder=" وأتساب الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentEmail" 
+                                 id="StudentEmail" 
+                                 autocomplete="off" 
+                                 placeholder="بريد الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentRegion" 
+                                 id="StudentRegion" 
+                                 autocomplete="off" 
+                                 placeholder=" إقليم الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentCity" 
+                                 id="StudentCity" 
+                                 autocomplete="off" 
+                                 placeholder="مدينة الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentDistrict" 
+                                 id="StudentDistrict" 
+                                 autocomplete="off" 
+                                 placeholder="مديرية الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentStage" 
+                                 id="StudentStage" 
+                                 autocomplete="off" 
+                                 placeholder="مرحلة الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentSubject" 
+                                 id="StudentSubject" 
+                                 autocomplete="off" 
+                                 placeholder=" مادة الطالب"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="RegistrationDate" 
+                                 id="RegistrationDate" 
+                                 autocomplete="off" 
+                                 placeholder="تاريخ التسجيل"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                           <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentUser" 
+                                 id="StudentUser" 
+                                 autocomplete="off" 
+                                 placeholder=" إسم المستخدم"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input 
+                                 type="text" 
+                                 name="StudentPassword" 
+                                 id="StudentPassword" 
+                                 autocomplete="off" 
+                                 placeholder="كلمة المرور"  
+                                 required 
+                                 class="form-control custom-form-control input-lg " />
+                            </div>
+                               <div class="form-group col-md-12 text-center">
+                                <input 
+                                type="submit" 
+                                name="Register"
+                                value="التسجيل" 
+                                onclick="ValidateEmail(email)" 
+                                class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
                         </form>
 
